@@ -1,0 +1,304 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.3 2021.07, Jul 13 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/vinicius.souza/Downloads/CNN/ws_dataflow/sim
+T_opt
+!s110 1668016539
+VD6:?>X=aKQJ^A`eT39dc:3
+04 2 2 work tb a1 1
+=1-3417ebad6de2-636be99a-9fa0f-24b3
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work -g N_FILTER=16 -g STRIDE=2 -g X_SIZE=32 -g FILTER_WIDTH=3 -g CONVS_PER_LINE=15 -g MEM_SIZE=16 -g INPUT_SIZE=16 -g CARRY_SIZE=4 -g CLK_PERIOD=1.0ns -g RST_TIME=5.0ns -g RISE_START=7.3ns -g FALL_START=9.3ns -g IN_DELAY=0.3ns -g LAT=2 -g N_CHANNEL=3 -g SHIFT=8 +acc=lprn
+tCvgOpt 0
+n@_opt
+OL;O;2021.3;73
+Econvolution
+Z1 w1665513006
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 5
+R0
+Z6 8../rtl/convolution/syst2d_ws.vhd
+Z7 F../rtl/convolution/syst2d_ws.vhd
+l0
+L10 1
+VeA5KnWF2Gl]3Rzz=Y]c4Z3
+!s100 BJeBeE0HmO3Q;DW2`kjI;3
+Z8 OL;C;2021.3;73
+32
+Z9 !s110 1668016537
+!i10b 1
+Z10 !s108 1668016537.000000
+Z11 !s90 -reportprogress|300|-work|work|../rtl/convolution/syst2d_ws.vhd|
+Z12 !s107 ../rtl/convolution/syst2d_ws.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Aa1
+Z15 DEx4 work 3 reg 0 22 7K7fY9j5HBe@hmm=gTKCA2
+Z16 DEx4 work 3 mac 0 22 fOGoiV6=IoH26NMcZk>[63
+R2
+R3
+R4
+R5
+Z17 DEx4 work 11 convolution 0 22 eA5KnWF2Gl]3Rzz=Y]c4Z3
+!i122 5
+l108
+L49 792
+VWPfVjO2M0a?0c03CU9SDG2
+!s100 F=_2C1L;XJgneL7]deWdB2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Pgold_package
+R2
+R3
+R4
+R5
+!i122 1
+w1650397451
+R0
+8../apps/gold_pkg.vhd
+F../apps/gold_pkg.vhd
+l0
+L4 1
+V9nT>^iU9ZE<7^fI10E=o42
+!s100 RUU4EmOho>Te]NlXXDTW^0
+R8
+32
+R9
+!i10b 1
+R10
+!s90 -reportprogress|300|-work|work|../apps/gold_pkg.vhd|
+!s107 ../apps/gold_pkg.vhd|
+!i113 0
+R13
+R14
+Pinmem_package
+R2
+R3
+R4
+R5
+!i122 0
+w1650397458
+R0
+8../apps/inmem_pkg.vhd
+F../apps/inmem_pkg.vhd
+l0
+L4 1
+VPPgKh^6E9H3^VzLmWOcZb3
+!s100 NKg<ZUk1lMzoG4ajHW<Ml3
+R8
+32
+R9
+!i10b 1
+R10
+!s90 -reportprogress|300|-work|work|../apps/inmem_pkg.vhd|
+!s107 ../apps/inmem_pkg.vhd|
+!i113 0
+R13
+R14
+Emac
+Z18 w1650396915
+R2
+R3
+R4
+R5
+!i122 2
+R0
+Z19 8../rtl/components/mac.vhd
+Z20 F../rtl/components/mac.vhd
+l0
+L8 1
+VfOGoiV6=IoH26NMcZk>[63
+!s100 OZZe^kh=;U[:]9i4>799A1
+R8
+32
+R9
+!i10b 1
+R10
+Z21 !s90 -reportprogress|300|-work|work|../rtl/components/mac.vhd|
+Z22 !s107 ../rtl/components/mac.vhd|
+!i113 0
+R13
+R14
+Aa1
+R2
+R3
+R4
+R5
+R16
+!i122 2
+l21
+L18 16
+Vgzj[PQ]41`c[3;ooTZmYH2
+!s100 2Z=9zaI[HWXf^L[O<U1U71
+R8
+32
+R9
+!i10b 1
+R10
+R21
+R22
+!i113 0
+R13
+R14
+Ememory
+R18
+Z23 DPx4 work 13 inmem_package 0 22 PPgKh^6E9H3^VzLmWOcZb3
+Z24 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+R2
+R3
+R4
+R5
+!i122 4
+R0
+Z25 8../rtl/components/mem.vhd
+Z26 F../rtl/components/mem.vhd
+l0
+L9 1
+VnM?j4ccbanmAQ2<Moz^B[2
+!s100 J2[ah4Vgfj[2NjRiX7KB23
+R8
+32
+R9
+!i10b 1
+R10
+Z27 !s90 -reportprogress|300|-work|work|../rtl/components/mem.vhd|
+Z28 !s107 ../rtl/components/mem.vhd|
+!i113 0
+R13
+R14
+Aa1
+R23
+R24
+R2
+R3
+R4
+R5
+Z29 DEx4 work 6 memory 0 22 nM?j4ccbanmAQ2<Moz^B[2
+!i122 4
+l42
+L30 138
+VoX8>TofG2ZzOi3X`:ehkf3
+!s100 ]RFg;:A8H190_OmHi:TkS1
+R8
+32
+R9
+!i10b 1
+R10
+R27
+R28
+!i113 0
+R13
+R14
+Ereg
+R18
+R4
+R5
+!i122 3
+R0
+Z30 8../rtl/components/reg.vhd
+Z31 F../rtl/components/reg.vhd
+l0
+L7 1
+V7K7fY9j5HBe@hmm=gTKCA2
+!s100 d0<^OQ>VAF_z8<V_0<McB2
+R8
+32
+R9
+!i10b 1
+R10
+Z32 !s90 -reportprogress|300|-work|work|../rtl/components/reg.vhd|
+Z33 !s107 ../rtl/components/reg.vhd|
+!i113 0
+R13
+R14
+Aa1
+R4
+R5
+R15
+!i122 3
+l17
+L16 15
+VM5UVjBQ_<zDQhLHHDXc1a1
+!s100 U[cKUEaLV[g2;De:Y[UY>3
+R8
+32
+R9
+!i10b 1
+R10
+R32
+R33
+!i113 0
+R13
+R14
+Etb
+Z34 w1650397150
+Z35 DPx4 work 12 gold_package 0 22 9nT>^iU9ZE<7^fI10E=o42
+R24
+R2
+R3
+R4
+R5
+!i122 6
+R0
+Z36 8../tb/tb_rtl.vhd
+Z37 F../tb/tb_rtl.vhd
+l0
+L9 1
+V7MW7Y5ZXNlLRJ?WEM74Og2
+!s100 58B=:zC^^fY4NaN63:;hB3
+R8
+32
+Z38 !s110 1668016538
+!i10b 1
+R10
+Z39 !s90 -reportprogress|300|-work|work|../tb/tb_rtl.vhd|
+Z40 !s107 ../tb/tb_rtl.vhd|
+!i113 0
+R13
+R14
+Aa1
+R17
+R23
+R29
+R35
+R24
+R2
+R3
+R4
+R5
+DEx4 work 2 tb 0 22 7MW7Y5ZXNlLRJ?WEM74Og2
+!i122 6
+l34
+L23 123
+V2K@KaH0LM6WTJ6O:B_Fc:3
+!s100 eSbL`59g<6IEULzYj>nQM2
+R8
+32
+R38
+!i10b 1
+R10
+R39
+R40
+!i113 0
+R13
+R14
